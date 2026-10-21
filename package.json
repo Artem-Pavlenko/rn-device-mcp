@@ -1,0 +1,46 @@
+{
+  "name": "rn-device-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for React Native work: iOS Simulator and Android emulator screenshots, logs, deep links, app install/launch, dev menu",
+  "type": "module",
+  "bin": {
+    "rn-device-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "keywords": [
+    "mcp",
+    "react-native",
+    "expo",
+    "ios-simulator",
+    "android-emulator",
+    "adb",
+    "simctl",
+    "claude-code"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "os": [
+    "darwin"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.12"
+  }
+}
